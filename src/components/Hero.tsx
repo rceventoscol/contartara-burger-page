@@ -28,9 +28,9 @@ const Hero = () => {
         }`}
       >
         <img 
-          src="/lovable-uploads/bded3d4a-2921-4eb3-916b-04c7ce7a2624.png" 
+          src="/lovable-uploads/8c10091e-af5a-43c0-a406-cba29e5b4385.png" 
           alt="Contártara Logo" 
-          className="w-32 h-32 mx-auto mb-6"
+          className="w-48 h-48 mx-auto mb-6"
         />
         
         <h1 className="font-display text-6xl md:text-8xl mb-6 leading-none">
