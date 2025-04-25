@@ -12,7 +12,7 @@ const Footer = () => {
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 text-center md:text-left">
           <div>
             <h3 className="font-display text-xl mb-2">DIRECCIÓN</h3>
-            <p>Cra 32 #48-45</p>
+            <p>Cra 27 #54-10</p>
             <p>Bucaramanga, Colombia</p>
           </div>
           
