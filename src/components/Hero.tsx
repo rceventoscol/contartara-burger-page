@@ -13,6 +13,11 @@ const Hero = () => {
     window.open('https://wa.me/573214458734', '_blank');
   };
 
+  const handleMenuClick = () => {
+    // Menu functionality to be implemented later
+    console.log('Menu clicked');
+  };
+
   return (
     <section className="relative min-h-screen bg-contartara-black text-contartara-cream flex items-center justify-center overflow-hidden">
       <div className="absolute inset-0 bg-gradient-to-b from-contartara-black/90 to-contartara-black z-10" />
@@ -22,6 +27,12 @@ const Hero = () => {
           isVisible ? 'translate-y-0 opacity-100' : 'translate-y-10 opacity-0'
         }`}
       >
+        <img 
+          src="/lovable-uploads/bded3d4a-2921-4eb3-916b-04c7ce7a2624.png" 
+          alt="Contártara Logo" 
+          className="w-32 h-32 mx-auto mb-6"
+        />
+        
         <h1 className="font-display text-6xl md:text-8xl mb-6 leading-none">
           LAS BURGER'S
           <span className="block text-contartara-yellow">CIERTAS</span>
@@ -32,15 +43,25 @@ const Hero = () => {
           LO QUE VES, ES LO QUE PRUEBAS
         </p>
 
-        <button
-          onClick={handleWhatsAppClick}
-          className="bg-contartara-yellow text-contartara-black px-8 py-4 rounded-full font-display text-xl 
-                   hover:bg-white transition-all duration-300 transform hover:scale-105 animate-bounce-subtle
-                   flex items-center justify-center mx-auto gap-2"
-        >
-          <MessageSquare className="w-6 h-6" />
-          PIDE POR WHATSAPP
-        </button>
+        <div className="flex flex-col items-center gap-4">
+          <button
+            onClick={handleWhatsAppClick}
+            className="bg-contartara-yellow text-contartara-black px-8 py-4 rounded-full font-display text-xl 
+                     hover:bg-white transition-all duration-300 transform hover:scale-105 animate-bounce-subtle
+                     flex items-center justify-center mx-auto gap-2"
+          >
+            <MessageSquare className="w-6 h-6" />
+            PIDE POR WHATSAPP
+          </button>
+
+          <button
+            onClick={handleMenuClick}
+            className="bg-contartara-black text-contartara-yellow border-2 border-contartara-yellow px-8 py-4 rounded-full 
+                     font-display text-xl hover:bg-contartara-yellow hover:text-contartara-black transition-all duration-300"
+          >
+            VER MENÚ
+          </button>
+        </div>
       </div>
     </section>
   );
