@@ -1,6 +1,6 @@
 
 import { useState, useEffect } from 'react';
-import { WhatsApp } from 'lucide-react';
+import { MessageSquare } from 'lucide-react';
 
 const Hero = () => {
   const [isVisible, setIsVisible] = useState(false);
@@ -38,7 +38,7 @@ const Hero = () => {
                    hover:bg-white transition-all duration-300 transform hover:scale-105 animate-bounce-subtle
                    flex items-center justify-center mx-auto gap-2"
         >
-          <WhatsApp className="w-6 h-6" />
+          <MessageSquare className="w-6 h-6" />
           PIDE POR WHATSAPP
         </button>
       </div>
